@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/restaraunts",
+      "handler": "restaraunt.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/restaraunts/count",
+      "handler": "restaraunt.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/restaraunts/:id",
+      "handler": "restaraunt.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/restaraunts",
+      "handler": "restaraunt.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/restaraunts/:id",
+      "handler": "restaraunt.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/restaraunts/:id",
+      "handler": "restaraunt.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
