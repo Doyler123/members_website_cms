@@ -1,23 +1,23 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "categories",
+  "collectionName": "topics",
   "info": {
-    "name": "Category"
+    "name": "Topic"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "restaraunts": {
-      "via": "categories",
-      "collection": "restaraunt",
+    "stories": {
+      "collection": "story",
+      "via": "topics",
       "dominant": true
     }
   }

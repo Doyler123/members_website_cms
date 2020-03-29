@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `restaraunt` model.
+ * Lifecycle callbacks for the `topic` model.
  */
 
 module.exports = {

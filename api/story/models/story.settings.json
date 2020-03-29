@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "stories",
+  "info": {
+    "name": "Story"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "via": "stories",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "sid": {
+      "type": "uid",
+      "required": true
+    },
+    "Draft": {
+      "type": "boolean",
+      "default": false
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "PublishDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "Thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "topics": {
+      "via": "stories",
+      "collection": "topic"
+    }
+  }
+}

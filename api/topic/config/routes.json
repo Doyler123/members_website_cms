@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/restaraunts",
-      "handler": "restaraunt.find",
+      "path": "/topics",
+      "handler": "topic.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/restaraunts/count",
-      "handler": "restaraunt.count",
+      "path": "/topics/count",
+      "handler": "topic.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/restaraunts/:id",
-      "handler": "restaraunt.findOne",
+      "path": "/topics/:id",
+      "handler": "topic.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/restaraunts",
-      "handler": "restaraunt.create",
+      "path": "/topics",
+      "handler": "topic.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/restaraunts/:id",
-      "handler": "restaraunt.update",
+      "path": "/topics/:id",
+      "handler": "topic.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/restaraunts/:id",
-      "handler": "restaraunt.delete",
+      "path": "/topics/:id",
+      "handler": "topic.delete",
       "config": {
         "policies": []
       }
